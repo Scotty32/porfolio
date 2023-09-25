@@ -1,19 +1,22 @@
 /* This CSS is common to all pages */
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'caveat';
+    src: url('./assets/fonts/Caveat-VariableFont_wght.ttf');
 }
 
-.navitem {
-  padding: 3px 10px;
+@keyframes background-swipe {
+    0% {
+        background-position: top right;
+    }
+    100% {
+        background-position: bottom right;
+    }
 }
-.navitem.is-active {
-  background-color: #eee;
+
+.animate-background {
+    animation: background-swipe 3s ease-in-out forwards;
 }

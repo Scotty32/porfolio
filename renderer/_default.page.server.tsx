@@ -34,7 +34,7 @@ async function render(pageContext: PageContextServer) {
         <title>${title}</title>
       </head>
       <body>
-        <div id="page-view">${dangerouslySkipEscape(pageHtml)}</div>
+        <div class="w-full min-h-full" id="page-view">${dangerouslySkipEscape(pageHtml)}</div>
       </body>
     </html>`
 
